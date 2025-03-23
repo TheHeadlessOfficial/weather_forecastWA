@@ -1,0 +1,112 @@
+conky.config = {
+	alignment = 'top_left',
+	background = true,
+	border_inner_margin = 5,
+	border_outer_margin = 0,
+	border_width = 0,
+	color0 = '8f3f97';--dab3ff
+	color1 = 'add8e6',
+	color2 = 'ffe595',
+	color3 = 'orange',
+	color4 = 'red',
+	color5 = '0068c8',
+	color6 = 'green',
+	color7 = 'FFDEAD',
+ 	color8 = '7e0023',--1e90ff dodgerblue 7e0023
+	color9 = 'yellow';
+	cpu_avg_samples = 2,
+	default_color = 'white',
+--default_graph_size 15 40
+	default_outline_color = '#000000',
+	default_shade_color = '#000000',
+	double_buffer = true,
+	draw_borders = false,
+	draw_graph_borders = false,
+	draw_outline = false,-- amplifies text if yes
+	draw_shades = false,
+	extra_newline = false,
+	font = 'URW Gothic L:size=8',
+--font = 'Roboto:size=10',
+	gap_x = 610,-- l|r
+	gap_y = 540,-- u|d
+	imlib_cache_size = 0,
+	maximum_width = 600,
+--	minimum_size = 600,
+	minimum_height = 500,
+--	minimum_width = 600,
+	net_avg_samples = 2,
+	no_buffers = true,
+	out_to_console = false,
+	out_to_stderr = false,
+	override_utf8_locale = true,
+	own_window = true,
+	own_window_argb_visual = true,
+	own_window_argb_value = 255,
+	own_window_class = 'Conky',
+--own_window_class = 'Conky-semi',
+--own_window_colour = '#000000',
+	own_window_hints = 'undecorated,below,skip_taskbar,skip_pager',
+--own_window_title = '4_Moon Teo Style',
+	own_window_transparent = false,
+--own_window_type = 'desktop',     --normal, desktop, dock, panel or override
+	own_window_type = 'normal',
+	pad_percents = 2,
+	short_units = true,
+	show_graph_range = true,
+	show_graph_scale = true,
+	stippled_borders = 5,
+--total_run_times 0,
+	update_interval = 900,
+	uppercase = false,-- set to yes if you want all text to be in uppercase
+	use_spacer = 'none',
+	use_xft = true,
+	xftalpha = 1.0,
+	
+}
+
+conky.text = [[
+########################################### check script Python 
+${if_existing /tmp/script_waforecast.lock}LOADING...${else}
+########################################### show 7° hour
+${execpi 900 sed -n '203p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}
+${execpi 900 sed -n '200p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '215p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '206p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '214p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '227p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}
+${execpi 900 sed -n '217p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '219p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '230p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '223p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '224p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}
+${execpi 900 sed -n '213p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '209p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '208p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '225p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '226p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}
+${execpi 900 sed -n '221p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '231p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '207p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '211p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '199p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '204p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}
+${alignc}--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+########################################### show 8° hour
+${execpi 900 sed -n '236p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}
+${execpi 900 sed -n '233p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '248p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '239p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '247p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '260p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}
+${execpi 900 sed -n '250p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '252p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '263p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '256p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '257p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}
+${execpi 900 sed -n '246p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '242p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '241p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '258p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '259p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}
+${execpi 900 sed -n '254p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '264p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '240p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '244p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '232p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '237p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}
+${alignc}--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+########################################### show 9° hour
+${execpi 900 sed -n '269p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}
+${execpi 900 sed -n '266p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '281p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '272p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '280p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '293p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}
+${execpi 900 sed -n '283p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '285p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '296p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '289p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '290p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}
+${execpi 900 sed -n '279p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '275p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '274p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '291p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '292p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}
+${execpi 900 sed -n '287p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '297p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '273p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '277p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '265p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '270p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}
+${alignc}--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+########################################### show 10° hour
+${execpi 900 sed -n '302p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}
+${execpi 900 sed -n '299p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '314p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '305p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '313p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '326p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}
+${execpi 900 sed -n '316p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '318p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '329p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '322p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '323p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}
+${execpi 900 sed -n '312p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '308p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '307p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '324p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '325p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}
+${execpi 900 sed -n '320p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '330p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '306p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '310p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '298p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '303p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}
+${alignc}--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+########################################### show 11° hour
+${execpi 900 sed -n '335p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}
+${execpi 900 sed -n '332p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '347p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '338p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '346p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '359p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}
+${execpi 900 sed -n '349p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '351p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '362p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '355p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '356p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}
+${execpi 900 sed -n '345p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '341p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '340p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '357p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '358p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}
+${execpi 900 sed -n '353p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '363p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '339p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '343p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '331p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '336p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}
+${alignc}--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+########################################### show 12° hour
+${execpi 900 sed -n '368p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}
+${execpi 900 sed -n '365p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '380p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '371p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '379p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '392p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}
+${execpi 900 sed -n '382p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '384p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '395p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '388p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '389p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}
+${execpi 900 sed -n '378p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '374p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '373p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '390p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '391p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}
+${execpi 900 sed -n '386p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '396p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '372p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '376p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '364p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}${execpi 900 sed -n '369p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyH.txt}
+${color2}${hr 1}${endif}
+]];

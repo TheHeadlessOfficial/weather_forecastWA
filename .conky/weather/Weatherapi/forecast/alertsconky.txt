@@ -1,0 +1,76 @@
+${color3}${alignc}----------------- FORECAST ALERTS -----------------
+${color2}${font URW Gothic L:size=7}Headline: ${color}${execpi 600 sed -n '1p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}
+${color}${execpi 600 sed -n '2p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}
+${color}${execpi 600 sed -n '3p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}
+${color}${execpi 600 sed -n '4p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}${font URW Gothic L:size=7}${color}
+${color2}msg: ${color}${execpi 600 sed -n '5p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}
+${color2}eva: ${color}${execpi 600 sed -n '6p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}
+${color2}urg: ${color}${execpi 600 sed -n '7p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}
+${color2}area: ${color}${execpi 600 sed -n '8p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}
+${color2}cat: ${color}${execpi 600 sed -n '9p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}
+${color2}cert: ${color}${execpi 600 sed -n '10p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}
+${color2}event: ${color}${execpi 600 sed -n '11p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}
+${color2}note: ${color}${execpi 600 sed -n '12p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}
+${color}${execpi 600 sed -n '13p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}
+${color}${execpi 600 sed -n '14p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}
+${color}${execpi 600 sed -n '15p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}${font URW Gothic L:size=7}${color}
+${color2}eff: ${color}${execpi 600 sed -n '16p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}
+${color2}esp: ${color}${execpi 600 sed -n '17p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}
+${color2}desc: ${color1}${font URW Gothic L:size=6}${execpi 600 sed -n '18p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}${color}
+${color1}${font URW Gothic L:size=6}${execpi 600 sed -n '19p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}${color}
+${color1}${font URW Gothic L:size=6}${execpi 600 sed -n '20p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}${color}
+${color1}${font URW Gothic L:size=6}${execpi 600 sed -n '21p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}${font URW Gothic L:size=7}${color}
+${color2}instructions: ${color}${execpi 600 sed -n '22p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}
+${color}${execpi 600 sed -n '23p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}
+${color}${execpi 600 sed -n '24p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}
+${color}${execpi 600 sed -n '25p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}${font URW Gothic L:size=7}${color}
+${color2}${font URW Gothic L:size=7}Headline: ${color}${execpi 600 sed -n '26p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}
+${color}${execpi 600 sed -n '27p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}
+${color}${execpi 600 sed -n '28p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}
+${color}${execpi 600 sed -n '29p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}${font URW Gothic L:size=7}${color}
+${color2}msg: ${color}${execpi 600 sed -n '30p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}
+${color2}eva: ${color}${execpi 600 sed -n '31p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}
+${color2}urg: ${color}${execpi 600 sed -n '32p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}
+${color2}area: ${color}${execpi 600 sed -n '33p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}
+${color2}cat: ${color}${execpi 600 sed -n '34p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}
+${color2}cert: ${color}${execpi 600 sed -n '35p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}
+${color2}event: ${color}${execpi 600 sed -n '36p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}
+${color2}note: ${color}${execpi 600 sed -n '37p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}
+${color}${execpi 600 sed -n '38p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}
+${color}${execpi 600 sed -n '39p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}
+${color}${execpi 600 sed -n '40p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}${font URW Gothic L:size=7}${color}
+${color2}eff: ${color}${execpi 600 sed -n '41p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}
+${color2}esp: ${color}${execpi 600 sed -n '42p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}
+${color2}desc: ${color1}${font URW Gothic L:size=6}${execpi 600 sed -n '43p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}${color}
+${color1}${font URW Gothic L:size=6}${execpi 600 sed -n '44p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}${color}
+${color1}${font URW Gothic L:size=6}${execpi 600 sed -n '45p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}${color}
+${color1}${font URW Gothic L:size=6}${execpi 600 sed -n '46p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}${font URW Gothic L:size=7}${color}
+${color2}instructions: ${color}${execpi 600 sed -n '47p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}
+${color}${execpi 600 sed -n '48p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}
+${color}${execpi 600 sed -n '49p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}
+${color}${execpi 600 sed -n '50p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}${font URW Gothic L:size=7}${color}
+${color2}${font URW Gothic L:size=7}Headline: ${color}${execpi 600 sed -n '51p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}
+${color}${execpi 600 sed -n '52p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}
+${color}${execpi 600 sed -n '53p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}
+${color}${execpi 600 sed -n '54p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}${font URW Gothic L:size=7}${color}
+${color2}msg: ${color}${execpi 600 sed -n '55p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}
+${color2}eva: ${color}${execpi 600 sed -n '56p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}
+${color2}urg: ${color}${execpi 600 sed -n '57p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}
+${color2}area: ${color}${execpi 600 sed -n '58p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}
+${color2}cat: ${color}${execpi 600 sed -n '59p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}
+${color2}cert: ${color}${execpi 600 sed -n '60p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}
+${color2}event: ${color}${execpi 600 sed -n '61p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}
+${color2}note: ${color}${execpi 600 sed -n '62p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}
+${color}${execpi 600 sed -n '63p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}
+${color}${execpi 600 sed -n '64p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}
+${color}${execpi 600 sed -n '65p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}${font URW Gothic L:size=7}${color}
+${color2}eff: ${color}${execpi 600 sed -n '66p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}
+${color2}esp: ${color}${execpi 600 sed -n '67p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}
+${color2}desc: ${color1}${font URW Gothic L:size=6}${execpi 600 sed -n '68p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}${color}
+${color1}${font URW Gothic L:size=6}${execpi 600 sed -n '69p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}${color}
+${color1}${font URW Gothic L:size=6}${execpi 600 sed -n '70p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}${color}
+${color1}${font URW Gothic L:size=6}${execpi 600 sed -n '71p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}${font URW Gothic L:size=7}${color}
+${color2}instructions: ${color}${execpi 600 sed -n '72p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}
+${color}${execpi 600 sed -n '73p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}
+${color}${execpi 600 sed -n '74p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}
+${color}${execpi 600 sed -n '75p' /home/hiro/.conky/weather/Weatherapi/weather/Weatherapi/forecast/alerts.txt}${font URW Gothic L:size=7}${color}

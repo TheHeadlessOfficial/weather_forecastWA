@@ -1,0 +1,33 @@
+lastupdatedepoch: 1742634900
+lastupdated: 2025-03-22 10:15
+tempc: 9.3
+tempf: 48.7
+day-night: 1
+weathertext: Light rain
+icon: //cdn.weatherapi.com/weather/64x64/day/296.png
+code: 1183
+windspeedmph: 6.3
+windspeedkmh: 10.1
+winddeg: 47
+winddegabb: NE
+presmb: 1017.0
+presin: 30.03
+precipmm: 0.17
+precipin: 0.01
+humidity: 93
+clouds: 100
+tempfeelsc: 7.8
+tempfeelsf: 46.0
+viskm: 1.4
+vismph: 0.0
+uvindex: 0.2
+windgustmph: 8.8
+windgustkmh: 14.1
+co: 440.3
+no2: 15.36
+o3: 59.0
+so2: 1.67
+pm2-5: 37.74
+pm10: 42.18
+us-epa-index: 2
+gb-defra-index: 4

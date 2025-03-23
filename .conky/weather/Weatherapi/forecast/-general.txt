@@ -1,0 +1,8 @@
+cityname: Padova
+region: Veneto
+country: Italy
+lat: 45.4167
+lon: 11.8833
+timezone: Europe/Rome        
+epochtime: 1742635031
+localtime: 22-March-2025

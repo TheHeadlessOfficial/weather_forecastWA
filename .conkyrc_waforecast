@@ -1,0 +1,81 @@
+conky.config = {
+	alignment = 'top_right',
+	background = true,
+	border_inner_margin = 5,
+	border_outer_margin = 0,
+	border_width = 0,
+	color0 = '8f3f97';--dab3ff
+	color1 = 'add8e6',
+	color2 = 'ffe595',
+	color3 = 'orange',
+	color4 = 'red',
+	color5 = '0068c8',
+	color6 = 'green',
+	color7 = 'FFDEAD',
+ 	color8 = '7e0023',--1e90ff dodgerblue 7e0023
+	color9 = 'yellow';
+	cpu_avg_samples = 2,
+	default_color = 'white',
+--default_graph_size 15 40
+	default_outline_color = '#000000',
+	default_shade_color = '#000000',
+	double_buffer = true,
+	draw_borders = false,
+	draw_graph_borders = false,
+	draw_outline = false,-- amplifies text if yes
+	draw_shades = false,
+	extra_newline = false,
+	font = 'URW Gothic L:size=8',
+--font = 'Roboto:size=10',
+	gap_x = 10,-- l|r
+	gap_y = 10,-- u|d
+	imlib_cache_size = 0,
+	maximum_width = 400,
+--minimum_size = 350,
+	minimum_height = 150,
+	minimum_width = 400,
+	net_avg_samples = 2,
+	no_buffers = true,
+	out_to_console = false,
+	out_to_stderr = false,
+	override_utf8_locale = true,
+	own_window = true,
+	own_window_argb_visual = true,
+	own_window_argb_value = 255,
+	own_window_class = 'Conky',
+--own_window_class = 'Conky-semi',
+--own_window_colour = '#000000',
+	own_window_hints = 'undecorated,below,skip_taskbar,skip_pager',
+--own_window_title = '4_Moon Teo Style',
+	own_window_transparent = false,
+--own_window_type = 'desktop',     --normal, desktop, dock, panel or override
+	own_window_type = 'normal',
+	pad_percents = 2,
+	short_units = true,
+	show_graph_range = true,
+	show_graph_scale = true,
+	stippled_borders = 5,
+--total_run_times 0,
+	update_interval = 900,
+	uppercase = false,-- set to yes if you want all text to be in uppercase
+	use_spacer = 'none',
+	use_xft = true,
+	xftalpha = 1.0,
+	
+}
+
+conky.text = [[
+########################################### load script Python
+${execpi 1200 python ~/.conkyGITHUB/weather/Weatherapi/forecast/forecastwadata.py}${if_existing /tmp/script_waforecast.lock}LOADING...${else}${color2}${font URW Gothic L:size=8}${alignc}WEATHERAPI FORECAST${font}${execpi 900 sed -n '1p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/walogo.txt}
+
+########################################### section for forecast
+${execpi 900 sed -n '1p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}${execpi 900 sed -n '28p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}
+${execpi 900 sed -n '2p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}/${execpi 900 sed -n '4p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}${execpi 900 sed -n '29p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}/${execpi 900 sed -n '31p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}
+${execpi 900 sed -n '14p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}  ${execpi 900 sed -n '21p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}${execpi 900 sed -n '41p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}  ${execpi 900 sed -n '48p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}
+${execpi 900 sed -n '15p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}  ${execpi 900 sed -n '16p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}${execpi 900 sed -n '42p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}  ${execpi 900 sed -n '43p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}
+${execpi 900 sed -n '17p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}-${execpi 900 sed -n '18p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}${execpi 900 sed -n '44p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}-${execpi 900 sed -n '45p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}
+${execpi 900 sed -n '10p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}${execpi 900 sed -n '37p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}
+${execpi 900 sed -n '9p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}  ${execpi 900 sed -n '12p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}${execpi 900 sed -n '36p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}  ${execpi 900 sed -n '39p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}${execpi 900 sed -n '20p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}${execpi 900 sed -n '47p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}
+${execpi 900 sed -n '55p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}
+${color2}${hr 1}${endif}
+]];

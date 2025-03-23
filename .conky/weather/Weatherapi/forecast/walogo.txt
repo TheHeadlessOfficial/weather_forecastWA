@@ -1,0 +1,1 @@
+${image /home/hiro/.conkyGITHUB/weather/Weatherapi/walogo2.png -p 265,0 -s 15x15}

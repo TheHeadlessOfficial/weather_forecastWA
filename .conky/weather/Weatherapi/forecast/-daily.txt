@@ -1,0 +1,87 @@
+date: 2025-03-22
+epochdate: 1742601600
+maxtempc: 11.2
+maxtempf: 52.1
+mintempc: 9.0
+mintempf: 48.2
+avgtempc: 9.7
+avgtempf: 49.5
+maxwindm: 8.5
+maxwindk: 13.7
+totalprecm: 2.46
+totalpreci: 0.1
+avgvisk: 8.9
+avgvism: 5.0
+humidity: 90
+willitrain: 1
+chanceofrain: 90
+willitsnow: 0
+chanceofsnow: 0
+text: Patchy rain nearby
+icon: //cdn.weatherapi.com/weather/64x64/day/176.png
+code: 1063
+uvindex: 0.2
+sunrise: 06:11 AM
+sunset: 06:28 PM
+moonrise: 02:14 AM
+moonset: 09:59 AM
+moonphase: Last Quarter
+moonillumi: 55
+date: 2025-03-23
+epochdate: 1742688000
+maxtempc: 16.0
+maxtempf: 60.9
+mintempc: 9.4
+mintempf: 48.9
+avgtempc: 11.8
+avgtempf: 53.2
+maxwindm: 8.9
+maxwindk: 14.4
+totalprecm: 10.56
+totalpreci: 0.42
+avgvisk: 7.4
+avgvism: 4.0
+humidity: 88
+willitrain: 1
+chanceofrain: 89
+willitsnow: 0
+chanceofsnow: 0
+text: Moderate rain
+icon: //cdn.weatherapi.com/weather/64x64/day/302.png
+code: 1189
+uvindex: 0.7
+sunrise: 06:10 AM
+sunset: 06:29 PM
+moonrise: 03:06 AM
+moonset: 11:01 AM
+moonphase: Waning Crescent
+moonillumi: 45
+date: 2025-03-24
+epochdate: 1742774400
+maxtempc: 17.7
+maxtempf: 63.9
+mintempc: 8.9
+mintempf: 47.9
+avgtempc: 12.7
+avgtempf: 54.9
+maxwindm: 9.2
+maxwindk: 14.8
+totalprecm: 0.49
+totalpreci: 0.02
+avgvisk: 7.3
+avgvism: 4.0
+humidity: 80
+willitrain: 1
+chanceofrain: 86
+willitsnow: 0
+chanceofsnow: 0
+text: Patchy rain nearby
+icon: //cdn.weatherapi.com/weather/64x64/day/176.png
+code: 1063
+uvindex: 0.8
+sunrise: 06:08 AM
+sunset: 06:30 PM
+moonrise: 03:49 AM
+moonset: 12:12 PM
+moonphase: Waning Crescent
+moonillumi: 35
