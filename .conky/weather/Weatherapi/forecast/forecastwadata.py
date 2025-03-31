@@ -88,9 +88,6 @@ try:
     tot = pi + pi2 + pi3 + est + str(x) + virg + str(y) + pf
     fo.write('{}\n'.format(tot))
     fo.close()
-    ################################ insert angle of your North in 'myd'
-    myd = 0
-    tdeg = 0
     ################################ get data for ERROR section
     #                   set the paths for the ERROR
     perr = home + homename + ptemp + '-error.txt'
