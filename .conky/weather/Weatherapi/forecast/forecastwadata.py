@@ -28,7 +28,7 @@ try:
     ################################ set default conky folder (change it if needed)
     home = '/home/'
     conky = '/.conky/'
-    ################################ set the paths for the API files
+    ################################ set the paths for the API file
     ptemp = conky + '/weather/Weatherapi/forecast/'
     ################################ set paths
     ptemp2 = conky + "/weather/Weatherapi/"
