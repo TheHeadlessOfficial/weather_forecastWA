@@ -41,38 +41,34 @@ try:
     pdewp = home + homename + ptemp + 'forecasthourlydewpt.txt'
     ################################################################ FUNCTIONS SECTION
     ################################ calculate forecast DAILY and HOURLY UV index color and write it
-    def uvindexDH(path, uvf):
-        #fo = open(path, 'w')
-        for i in range(0, forecastday):
-            value = uvf
-            if (value >=0 and value < 3):
-                color = 6
-            elif (value >=3 and value < 6):
-                color = 9
-            elif (value >=6 and value < 8):
-                color = 3
-            elif (value >=8 and value < 11):
-                color = 4
-            elif (value >= 11):
-                color = 0
-            else:
-                color = 2
-            return(value, color)
+    def uvindexDH(uvf):
+        value = uvf
+        if (value >=0 and value < 3):
+            color = 6
+        elif (value >=3 and value < 6):
+            color = 9
+        elif (value >=6 and value < 8):
+            color = 3
+        elif (value >=8 and value < 11):
+            color = 4
+        elif (value >= 11):
+            color = 0
+        else:
+            color = 2
+        return(value, color)
     ################################ calculate HOURLY forecast dew point color and write it
         color = 'white'
-    def dewpointH(path, dpf):    
-        #fof = open(path, 'w')
-        for i in range(0, grouph):
-            value = dpf
-            if (value < 19):
-                color = 6
-            elif (value >=19 and value < 22):
-                color = 9
-            elif (value >=22):
-                color = 4
-            else:
-                color = 'white'
-            return(value, color)
+    def dewpointH(dpf):    
+        value = dpf
+        if (value < 19):
+            color = 6
+        elif (value >=19 and value < 22):
+            color = 9
+        elif (value >=22):
+            color = 4
+        else:
+            color = 'white'
+        return(value, color)
     ################################ create the path for weatherapi logo
     #                   set the path for the Weatherapi logo
     pwblogo = home + homename + ptemp + 'walogo.txt'
@@ -434,7 +430,7 @@ try:
             fodr.write('uvindex: {}\n'.format(duv[-1]))
             fodc.write('{}\n'.format(duv[-1]))
             duv2 = data['forecast']['forecastday'][i]['day']['uv']
-            resvalue, rescolor = uvindexDH(puvid, duv2)
+            resvalue, rescolor = uvindexDH(duv2)
             fouvd.write('{}\n'.format(resvalue))
             fouvd.write('{}\n'.format(rescolor))
             dsunrise.append(data['forecast']['forecastday'][i]['astro']['sunrise'])
@@ -544,7 +540,7 @@ try:
                 hdpc2 = data['forecast']['forecastday'][i]['hour'][y]['dewpoint_c']
                 fohr.write('dewpoint_c: {}\n'.format(hdpc[-1]))
                 fohc.write('{}\n'.format(hdpc[-1]))
-                resvalue, rescolor = dewpointH(pdewp, hdpc2)
+                resvalue, rescolor = dewpointH(hdpc2)
                 fodp.write('{}\n'.format(resvalue))
                 fodp.write('{}\n'.format(rescolor))
                 hdpf.append(data['forecast']['forecastday'][i]['hour'][y]['dewpoint_f'])
@@ -578,7 +574,7 @@ try:
                 huv2 = data['forecast']['forecastday'][i]['hour'][y]['uv']
                 fohr.write('uv: {}\n'.format(huv[-1]))
                 fohc.write('{}\n'.format(huv[-1]))
-                resvalue, rescolor = uvindexDH(puvih, huv2)
+                resvalue, rescolor = uvindexDH(huv2)
                 fouvh.write('{}\n'.format(resvalue))
                 fouvh.write('{}\n'.format(rescolor))
         fodr.close()
