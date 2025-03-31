@@ -69,12 +69,6 @@ conky.text = [[
 ${execpi 1200 python ~/.conky/weather/Weatherapi/forecast/forecastwadata.py}${if_existing /tmp/script_waforecast.lock}LOADING...${else}${color2}${font URW Gothic L:size=8}${alignc}WEATHERAPI FORECAST${font}${execpi 900 sed -n '1p' $HOME/.conky/weather/Weatherapi/forecast/walogo.txt}
 
 ########################################### section for forecast
-${execpi 900 sed -n '1p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyD.txt}${execpi 900 sed -n '29p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyD.txt}
-${execpi 900 sed -n '2p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyD.txt}/${execpi 900 sed -n '4p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyD.txt}${execpi 900 sed -n '30p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyD.txt}/${execpi 900 sed -n '32p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyD.txt}
-${execpi 900 sed -n '15p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyD.txt}  ${execpi 900 sed -n '22p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyD.txt}${execpi 900 sed -n '43p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyD.txt}  ${execpi 900 sed -n '50p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyD.txt}
-${execpi 900 sed -n '16p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyD.txt}  ${execpi 900 sed -n '17p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyD.txt}${execpi 900 sed -n '44p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyD.txt}  ${execpi 900 sed -n '45p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyD.txt}
-${execpi 900 sed -n '18p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyD.txt}-${execpi 900 sed -n '19p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyD.txt}${execpi 900 sed -n '46p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyD.txt}-${execpi 900 sed -n '47p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyD.txt}
-${execpi 900 sed -n '10p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyD.txt}${execpi 900 sed -n '38p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyD.txt}
-${execpi 900 sed -n '9p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyD.txt}  ${execpi 900 sed -n '13p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyD.txt}${execpi 900 sed -n '37p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyD.txt}  ${execpi 900 sed -n '41p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyD.txt}${execpi 900 sed -n '21p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyD.txt}${execpi 900 sed -n '49p' $HOME/.conky/weather/Weatherapi/forecast/forecastconkyD.txt}
+          TYPE HERE YOUR CODE
 ${color2}${hr 1}${endif}
 ]];
