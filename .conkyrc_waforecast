@@ -27,7 +27,7 @@ conky.config = {
 	extra_newline = false,
 	font = 'URW Gothic L:size=8',
 --font = 'Roboto:size=10',
-	gap_x = 10,-- l|r
+	gap_x = -410,-- l|r
 	gap_y = 10,-- u|d
 	imlib_cache_size = 0,
 	maximum_width = 400,
@@ -56,7 +56,7 @@ conky.config = {
 	show_graph_scale = true,
 	stippled_borders = 5,
 --total_run_times 0,
-	update_interval = 900,
+	update_interval = 30,
 	uppercase = false,-- set to yes if you want all text to be in uppercase
 	use_spacer = 'none',
 	use_xft = true,
@@ -69,13 +69,12 @@ conky.text = [[
 ${execpi 1200 python ~/.conkyGITHUB/weather/Weatherapi/forecast/forecastwadata.py}${if_existing /tmp/script_waforecast.lock}LOADING...${else}${color2}${font URW Gothic L:size=8}${alignc}WEATHERAPI FORECAST${font}${execpi 900 sed -n '1p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/walogo.txt}
 
 ########################################### section for forecast
-${execpi 900 sed -n '1p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}${execpi 900 sed -n '28p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}
-${execpi 900 sed -n '2p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}/${execpi 900 sed -n '4p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}${execpi 900 sed -n '29p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}/${execpi 900 sed -n '31p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}
-${execpi 900 sed -n '14p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}  ${execpi 900 sed -n '21p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}${execpi 900 sed -n '41p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}  ${execpi 900 sed -n '48p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}
-${execpi 900 sed -n '15p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}  ${execpi 900 sed -n '16p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}${execpi 900 sed -n '42p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}  ${execpi 900 sed -n '43p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}
-${execpi 900 sed -n '17p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}-${execpi 900 sed -n '18p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}${execpi 900 sed -n '44p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}-${execpi 900 sed -n '45p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}
-${execpi 900 sed -n '10p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}${execpi 900 sed -n '37p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}
-${execpi 900 sed -n '9p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}  ${execpi 900 sed -n '12p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}${execpi 900 sed -n '36p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}  ${execpi 900 sed -n '39p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}${execpi 900 sed -n '20p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}${execpi 900 sed -n '47p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}
-${execpi 900 sed -n '55p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}
+${execpi 900 sed -n '1p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}${execpi 900 sed -n '29p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}
+${execpi 900 sed -n '2p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}/${execpi 900 sed -n '4p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}${execpi 900 sed -n '30p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}/${execpi 900 sed -n '32p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}
+${execpi 900 sed -n '15p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}  ${execpi 900 sed -n '22p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}${execpi 900 sed -n '43p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}  ${execpi 900 sed -n '50p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}
+${execpi 900 sed -n '16p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}  ${execpi 900 sed -n '17p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}${execpi 900 sed -n '44p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}  ${execpi 900 sed -n '45p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}
+${execpi 900 sed -n '18p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}-${execpi 900 sed -n '19p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}${execpi 900 sed -n '46p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}-${execpi 900 sed -n '47p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}
+${execpi 900 sed -n '10p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}${execpi 900 sed -n '38p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}
+${execpi 900 sed -n '9p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}  ${execpi 900 sed -n '13p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}${execpi 900 sed -n '37p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}  ${execpi 900 sed -n '41p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}${execpi 900 sed -n '21p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}${execpi 900 sed -n '49p' $HOME/.conkyGITHUB/weather/Weatherapi/forecast/forecastconkyD.txt}
 ${color2}${hr 1}${endif}
 ]];
