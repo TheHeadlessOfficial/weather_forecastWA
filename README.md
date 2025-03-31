@@ -29,7 +29,7 @@ Run the file `.conkyrc_waforecast` from terminal (the first time you run this co
 ![](https://github.com/TheHeadlessOfficial/weather_forecastWA/blob/main/.conky/docs/screenshot.png)<br>
 This pic is related to the file `-daily.txt` (or `daily.txt`)  and it shows the next 2 forecast days.<br>
 You can build the daily conky as you wish getting the data from one of the file mentioned above.<br>
-One block of 32 rows (in the two file) is for 1 single forecast day, the first 32 rows are for the current day.<br>
+One block of 32 rows (in the two file) is for 1 single forecast day, the first 32 rows block is for the current day.<br>
 <br>
 <br>
 <br>
